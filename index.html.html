@@ -167,6 +167,23 @@ nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:1.4rem 3rem;display:
 .style-title{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:.05em;color:var(--white);margin-bottom:.5rem}
 .style-desc{font-size:.82rem;color:var(--muted2);line-height:1.75}
 
+
+/* ═══════════════════════════════
+   PROJECTS
+═══════════════════════════════ */
+#projects{background:var(--bg)}
+.projects-grid{margin-top:4rem;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+.project-card{background:var(--surface);border:1px solid var(--border);overflow:hidden;transition:.3s}
+.project-card:hover{transform:translateY(-8px);border-color:var(--gold);box-shadow:0 0 30px rgba(212,168,67,.15)}
+.project-thumb{position:relative;aspect-ratio:16/9;overflow:hidden}
+.project-thumb img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.project-card:hover img{transform:scale(1.08)}
+.play-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:70px;height:70px;border-radius:50%;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:1.3rem;border:1px solid var(--gold)}
+.project-info{padding:1.5rem}
+.project-category{font-family:'Space Mono',monospace;font-size:.6rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:.8rem}
+.project-link{color:var(--gold);text-decoration:none}
+
+
 /* ═══════════════════════════════
    THEORY — tape effect
 ═══════════════════════════════ */
@@ -299,6 +316,7 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
     <li><a href="#about">About</a></li>
     <li><a href="#tools">Tools</a></li>
     <li><a href="#style">Style</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#experience">Work</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -474,6 +492,27 @@ footer{background:var(--surface);border-top:1px solid var(--border);padding:2rem
     </div>
   </div>
 </section>
+
+
+<!-- ═══ PROJECTS ═══ -->
+<section id="projects" class="s">
+<div class="reveal"><div class="s-label">Frame 004</div><h2 class="s-heading">FEATURED<br/>PROJECTS</h2></div>
+<div class="projects-grid">
+<div class="project-card reveal">
+<div class="project-thumb"><img src="images/project1.jpg" alt=""><div class="play-btn">▶</div></div>
+<div class="project-info"><div class="project-category">Real Estate</div><h3>Luxury Villa Showcase</h3><p>Cinematic property walkthrough.</p><a href="YOUR_VIDEO_LINK" class="project-link">Watch Project →</a></div>
+</div>
+<div class="project-card reveal">
+<div class="project-thumb"><img src="images/project2.jpg" alt=""><div class="play-btn">▶</div></div>
+<div class="project-info"><div class="project-category">Hospitality</div><h3>Hotel Promo Film</h3><p>Luxury hospitality editing showcase.</p><a href="YOUR_VIDEO_LINK" class="project-link">Watch Project →</a></div>
+</div>
+<div class="project-card reveal">
+<div class="project-thumb"><img src="images/project3.jpg" alt=""><div class="play-btn">▶</div></div>
+<div class="project-info"><div class="project-category">Social Media</div><h3>High Energy Reel</h3><p>Fast-paced social media edit.</p><a href="YOUR_VIDEO_LINK" class="project-link">Watch Project →</a></div>
+</div>
+</div>
+</section>
+
 
 <!-- ═══ THEORY ═══ -->
 <section id="theory" class="s">
